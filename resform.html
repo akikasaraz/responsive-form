@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Feedback Survey</title>
+    <link rel="stylesheet" href="res.css">
+</head>
+
+<body>
+<form id="survey-form" action="submitForm()" method="POST">
+    <fieldset>
+        <legend><strong>The Hobbit Survey</strong></legend>
+
+        <label for="options">Have you seen the movie series "The Hobbit" or "Lord of the Rings"?</label>
+        <select id="options" name="options" required="">
+          <option value="" selected="" disabled="">Select</option>
+          <option value="Yes">Yes, I have seen both movies.</option>
+          <option value="Maybe">Yes, but I have only seen one of the two movies.</option>
+          <option value="No">No, I haven't seen either of the movies.</option>
+        </select>
+
+        <label for="options">Are you familiar with the wig interview?</label>
+        <select id="options" name="options" required="">
+          <option value="" selected="" disabled="">Select</option>
+          <option value="Yes">Yes.</option>
+          <option value="No">No.</option>
+          <option value="Huh">The what?</option>
+        </select>
+
+        <label for="options">Do you wear wigs?</label>
+        <select id="options" name="options" required="">
+          <option value="" selected="" disabled="">Select</option>
+          <option value="Yes">Yes, I do.</option>
+          <option value="No">No, I do not.</option>
+        </select>
+
+        <label for="options">Have you worn wigs?</label>
+        <select id="options" name="options" required="">
+          <option value="" selected="" disabled="">Select</option>
+          <option value="Yes">Yes, I have.</option>
+          <option value="No">No, I have not.</option>
+        </select>
+
+        <label for="options">Will you wear wigs?</label>
+        <select id="options" name="options" required="">
+          <option value="" selected="" disabled="">Select</option>
+          <option value="Yes">Yes.</option>
+          <option value="Maybe">Maybe.</option>
+          <option value="No">No.</option>
+        </select>
+
+        <label for="options">When will you wear wigs?</label>
+        <select id="options" name="options" required="">
+          <option value="" selected="" disabled="">Select</option>
+          <option value="Yes">Soon.</option>
+          <option value="Idk">I don't know.</option>
+          <option value="Haha">HAHAHAHAHAHAHAHAHAHA</option>
+        </select>
+        
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+<script>
+    function submitForm() {
+        // Function to handle form submission logic
+    }
+</script>
+
+</body>
+</html>
