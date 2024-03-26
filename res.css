@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Klandestin';
-  src: url('../responsive\ form/KlandestindemoRegular-rvvxK.otf') format('opentype');
+  src: url('../responsive/form/KlandestindemoRegular-rvvxK.otf') format('opentype');
 }
 @font-face {
   font-family: 'Beatnik Garden';
-  src: url('../responsive\ form/WondernesiademoRegular-V44zV.otf') format('opentype');
+  src: url('../responsive/form/WondernesiademoRegular-V44zV.otf') format('opentype');
 }
 body {
-  background-image: url(wallpaperflare.com_wallpaper\ \(4\).jpg);
+  background-image: url('wallpaperflare.com_wallpaper(4).jpg');
   object-fit: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -19,38 +19,19 @@ body {
   background-color: #fafafa;
   color: #333;
   font-family: 'Beatnik Garden';
+  background-size: cover;
+  height: 100vh;
 }
 form {
   background-color: #C0C0C0;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 33%;
-  max-height: 70%;
-}
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-legend {
-  font-size: 32px;
-  color: #444;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eaeaea;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: 'Klandestin';
-}
 
-label {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 8px;
-  font-size: 18px;
-  color: #444;
+  width: 90%; 
+  max-width: 500px; 
+  margin: 0 auto; 
 }
-
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -67,32 +48,22 @@ textarea {
   background-color: whitesmoke;
 }
 
-input[type="submit"] {
-  background-color: #899499;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-  width: 100%;
-}
-
 input[type="submit"]:hover {
   background-color: lightgray;
 }
 
-/* Desktop and Tablet styles */
 @media (min-width: 768px) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
   form {
-      width: 60%;
-      margin: 0 auto;
+    width: 70%; 
   }
 }
 
 @media (min-width: 1024px) {
   form {
-      width: 50%;
+    width: 50%; 
   }
 }
